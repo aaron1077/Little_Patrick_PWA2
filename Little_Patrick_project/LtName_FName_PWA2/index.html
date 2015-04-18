@@ -1,4 +1,5 @@
-<!doctype html>  
+<!-------------------------------------VaporSphere Patrick Little------------------------------------------------------>
+<!doctype html>
 
 <!--
 	This is the main index of the application
@@ -33,28 +34,37 @@
 <!----------------------------------------------------HEADER----------------------------------------------------------->
     <header>
         <h1>VaporSphere</h1>
-        <img src ="images/logo.jpg">
+        <img src ="images/logo.jpg" id="logo">
         <p>Login or <a href="register.html">Join Now!</a></p>
-        <form>
-            Username:
-            <input type="text" name="username">
-            Password:
-            <input type="text" name="password">
-        </form>
-        <form action="admin.html">
-            <input type="submit" value="Submit">
-        </form>
+        <div id ="login">
+            <form id="loginForm">
+                <label>Username:</label>
+                <input type="text" name="signinButton" id="User" class="masterTooltip" title="Please enter a username" required /><br>
+                <label>Password:</label>
+                <input type="text" name="signinButton" id="pass" class="masterTooltip" title="Please enter a password" required /><br>
+                <form action="admin.html" id="button">
+                    <input name="signinButton" type="button" id="signinButton" value="Sign In">
+                </form>
+            </form>
+
+        </div>
     </header>
 <!----------------------------------------------------CONTAINER-------------------------------------------------------->
-	<div id="container">
+    <div id="cta">
+        <h2>Join Now!</h2>
+        <p>
+            bnvufdbsvbfhbsviubdubfluwberuifblwibhvkbuybvuybuybubuykbyububiugvytcxrgsWAFsdxhfghvjbytcrtfjcv
+        </p>
+        <input name="regButton" type="button" value="Sign Up" title="Join Today!" class="masterTooltip">
+    </div>
 
-	</div>
 <!----------------------------------------------------FOOTER----------------------------------------------------------->
 	<footer>
         <p>&copy VaporSphere</p>
 	</footer>
 <!----------------------------------------------------JAVASCRIPT------------------------------------------------------->
 	<!-- jquery -->
+    <div id="tooltipBox">student</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- plugins -->
 

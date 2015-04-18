@@ -1,0 +1,63 @@
+/**************************************************Body****************************************************************/
+body{
+    max-width: 800px;
+    background-color: black;
+    margin: 35px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/**************************************************Header**************************************************************/
+header{
+    background-color: #FFFFFF;
+}
+/**************************************************Container***********************************************************/
+#container{
+    background-color: #FFFFFF;
+    height: 400px;
+}
+/**************************************************Heading 1***********************************************************/
+h1{
+    float: left;
+    padding-left: 50px;
+}
+/**************************************************Heading 2***********************************************************/
+h2{
+    text-align: left;
+    padding-left: 50px;
+}
+
+/**************************************************Logout**************************************************************/
+#logout{
+    float: right;
+    margin:25px;
+}
+/**************************************************Footer**************************************************************/
+footer{
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+#tabs{
+    background-color:#FFFFFF;
+    width: 758px;
+    height: 250px;
+    padding:20px;
+    text-align: left;
+}
+
+#tabs-nav{
+    width: 758px;
+    height: 50px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#tabs-nav li{
+    display: inline;
+}

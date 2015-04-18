@@ -1,0 +1,108 @@
+<!-------------------------------------VaporSphere Patrick Little------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<!----------------------------------------------Head------------------------------------------------------------------->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>VaporSphere</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS concatenated and minified via ant build script-->
+    <link rel="stylesheet" href="css/style3.css?v=1">
+    <!-- end CSS-->
+
+</head>
+<!----------------------------------------------Body------------------------------------------------------------------->
+<body>
+<!----------------------------------------------Header----------------------------------------------------------------->
+    <header id="header">
+        <div class="userid">Welcome User:</div>
+        <div class="logoutbox">
+            <button class="dashboard">Dashboard</button>
+            <input name="logOut" type="button" id="logOut" value="Sign Out" />
+        </div>
+    </header>
+<br>
+<!----------------------------------------------Container-------------------------------------------------------------->
+<div id="container">
+<!----------------------------------------------Welcome Class---------------------------------------------------------->
+    <div class="welcome">
+        <p><a href="#" class ="modalClick">Add +</a></p>
+    </div>
+
+<!----------------------------------------------#Projectlists---------------------------------------------------------->
+    <div id="projectlist">
+        <h1>Current Projects</h1>
+<!----------------------------------------------Projects Class--------------------------------------------------------->
+        <div class="projects"></div>
+    </div>
+<!----------------------------------------------#Overlay--------------------------------------------------------------->
+    <div id="overlay">
+<!----------------------------------------------#Modal----------------------------------------------------------------->
+            <div id="modal">
+                    <span class="close">X</span>
+        <h3 class="header">Add Project</h3>
+<!----------------------------------------------#Add and #addForm------------------------------------------------------>
+        <div id="add">
+            <form id="addForm">
+                <label>Project Name:</label>
+                    <input name="projectName" type="text" id="projectName"/>
+                <br>
+                <label>Project Description:</label>
+                    <input name="projectDescription" type="text" id="projectDescription" /><br>
+                <label>Project Due Date: </label>
+                    <input name="projectDueDate" type="text" id="projectDueDate" /><br>
+                <label for="status">Select status:</label>
+                <br>
+
+
+                <label class="mystatus">
+                <input type="radio" name="status" id="urgent">
+                <img src="images/btn1.svg" width="69" height="75">
+                </label>
+
+                <label class="mystatus">
+                    <input type="radio" name="status" id="normal">
+                    <img src="images/btn2.png" width="69" height="75">
+                </label>
+
+                <label class="mystatus">
+                    <input type="radio" name="status" id="delayed">
+                    <img src="images/btn3.jpeg" width="69" height="75">
+                </label>
+
+                <label class="mystatus">
+                    <input type="radio" name="status" id="complete">
+                    <img src="images/btn4.png" width="69" height="75"><br>
+                </label>
+
+                <br>
+            <input name="addButton" type="button" id="addButton" value="Add" />
+            </form>
+        </div>
+            </div>
+    </div>
+</div>
+
+<!----------------------------------------------------FOOTER---------------------------------------------------------->
+<footer>
+    <p>&copy VaporSphere</p>
+</footer>
+<!----------------------------------------------------JAVASCRIPT------------------------------------------------------->
+<!-- jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- plugins -->
+
+
+<!-- main -->
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
