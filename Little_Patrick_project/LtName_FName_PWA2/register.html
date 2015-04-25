@@ -29,23 +29,24 @@
 <!----------------------------------------------------CONTAINER-------------------------------------------------------->
 <div id="container">
     <h2>Registration</h2>
-    <form>
-        Username:
-        <input type="text" name="username"><br/>
-        Password:
-        <input type="text" name="password"><br/>
-        Confirm Password:
-        <input type="text" name="confirm password"><br/>
-        First Name:
-        <input type="text" name="first name"><br/>
-        Last Name:
-        <input type="text" name="last name"><br/>
-        Email:
-        <input type="text" name="email"><br/>
-    </form>
-    <form action="admin.html">
-    <input type="submit" value="Submit">
-    </form>
+    <label for="first-name">First Name</label><br>
+    <input id="first" type="text" name="first-name" placeholder="Enter your first name"><br>
+    <label for="last-name">Last Name</label><br>
+    <input id="last" type="text" name="last-name" placeholder="Enter your last name"><br>
+    <label for="user-name">User Name</label><br>
+    <input id="userName" type="text" name="user-name" placeholder="Enter your user name" required><br>
+    <label for="Email">Email Address</label><br>
+    <input id="email" type="email" name="email" placeholder="Enter your email address"><br>
+    <label for="password">Password</label><br>
+    <input id="password" type="password" name="password" placeholder="Enter your password" required><br>
+    <label for="pass-confirm">Confirm Password</label><br>
+    <input type="password" name="pass-confirm" placeholder="Confirm your password" required><br>
+    <input type="checkbox" required>
+    <p>I agree to the <a href="#">terms</a> of VaporSphere</p>
+    <input type="button" id="register" value="Submit">
+
+
+
 </div>
 <!----------------------------------------------------FOOTER----------------------------------------------------------->
 <footer>
