@@ -16,12 +16,13 @@
 
     <!-- CSS concatenated and minified via ant build script-->
     <link rel="stylesheet" href="css/style3.css?v=1">
-    <link rel="stylesheet" href="jquery.ui/ui-darkness/css/jquery-ui-1.10.4.custom.min.css?v=1">
+    <link rel="stylesheet" href="jquery.ui/css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
     <!-- end CSS-->
 
 </head>
 <!----------------------------------------------Body------------------------------------------------------------------->
 <body>
+
 <!----------------------------------------------Header----------------------------------------------------------------->
     <header id="header">
         <div class="userid">Welcome User:</div>
@@ -37,12 +38,12 @@
     <div class="welcome">
         <p><a href="#" class ="modalClick">Add +</a></p>
     </div>
-
+    <div id="progressbar"></div>
 <!----------------------------------------------#Projectlists---------------------------------------------------------->
     <div id="projectlist">
         <h1>Current Projects</h1>
 <!----------------------------------------------Projects Class--------------------------------------------------------->
-        <div class="projects">
+        <div class="projects" id="sortable">
 
         </div>
     </div>

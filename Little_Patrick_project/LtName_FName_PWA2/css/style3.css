@@ -21,7 +21,7 @@ body{
 /**************************************************Container***********************************************************/
 #container{
     background-color: #FFFFFF;
-    height:500px;
+    height:100%;
     text-align: left;
 }
 /**************************************************Footer**************************************************************/
@@ -111,3 +111,7 @@ input[type=radio] + img{
 input[type=radio]:checked + img{
     border:2px solid #F00;
 }
+/********************************************Move objects around, Sortable*********************************************/
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 99.9%; }
+#sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+#sortable li span { position: absolute; margin-left: -1.3em; }

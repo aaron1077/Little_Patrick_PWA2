@@ -166,7 +166,7 @@ $.getJSON('xhr/check_login.php', function(data){
     console.log(data);
     $.each(data, function(key, val){
         console.log(val.firstname);
-        $(".userid").html("Welcome User: " + val.firstname);
+        $(".userId").html("Welcome User: " + val.firstname);
     })
 });
 
@@ -214,7 +214,8 @@ $.getJSON('xhr/check_login.php', function(data){
                     var result = response.projects[i];
 
                     $(".projects").append(
-                        '<div style="border:1px solid black">' +
+                        //'<div style="border:1px solid black">' +
+                        '<div id="sortable" class="ui-state-default">' +
                         " <input class='projectid' type='hidden' value='" +result.id + "'>" +
 
                         "Project Name: " + result.projectName + "<br>" +
@@ -252,6 +253,21 @@ $.getJSON('xhr/check_login.php', function(data){
     })
 }
 projects();
+/**************************************************************DatePicker**********************************************/
+    $( ".mydatepicker" ).datepicker();
+/**************************************************************Sorting*************************************************/
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+/*************************************************************progress bar*********************************************/
+    $( "#progressbar" ).progressbar({
+        value: 37
+    });
+/**************************************************************Colorbox************************************************/
+$('#vapors').find('a').colorbox({rel:'gal' });
+
+
+
+
 })(jQuery); // end private scope
 
 

@@ -16,6 +16,7 @@
 
     <!-- CSS concatenated and minified via ant build script-->
     <link rel="stylesheet" href="css/style2.css?v=1">
+    <link rel="stylesheet" href="jquery.ui/css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
     <!-- end CSS-->
 
 </head>
@@ -23,16 +24,16 @@
 <body>
 <!----------------------------------------------------HEADER----------------------------------------------------------->
 <header>
-    <input type="submit" value="Log Out" id="logOut">
+
 
     <h1>VaporSphere</h1>
-    <img src ="images/logo.jpg">
 
-    <div class="userid"><h2>Welcome User!</h2></div>
+    <div class=".logOutBox"><input type="submit" value="Log Out" id="logOut"></div>
+    <div class="userId"><h2>Welcome User!</h2></div>
 </header>
 <!----------------------------------------------------CONTAINER-------------------------------------------------------->
-<div>
-    <ul id="tabs-nav"
+<div id="container">
+    <ul id="tabs-nav">
         <li><a href="#projects">
         <img src="images/projects.jpg" width="100" height="67" id="projects"></a></li>
         <li><a href="#tasks">
@@ -43,24 +44,37 @@
 
     <div id="tabs">
         <p id="projects">
-            vnfjislhviufhiglseirunfiluwuilbfriuewbfliuber
-            gbrueiwlbfiubriubfwuirebfbwlueirbfiulwb
-            nfgjriewlbfuibreuiwflbruibfwlirbiufw<br>
+            Here you can add a Vapor project. Just go to your projects and start building your own
+            vapor to fit your custom needs. It's easy and affordable!.<br>
             Go to my projects...<button class="projectsbtn">Projects</button>
         </p>
         <p id="tasks">
-            bvnfhdksbvbfsbvubfbsvehubvuybskudb vs
-            v fhdskbvhbfhdk hsvf dvshjkd fvs
-            v jfbd lsbvhfb ldsbvhbflhjdsbslbjhbb<br>
+            Do you have any tasks you need to complete or want to save?
+            Just go to your tasks and check them off one by one.<br>
             Go to my tasks...<button class="tasksbtn">Tasks</button>
         </p>
         <p id="users">
-            nvfuilrebubrfbsvkuyebvydghvksh fuvuvwruyv cdkuvc
-            bvyuew uveyb wbvcyuw bucybde wubdu a ucb ds
-            bvyew buv yu buyvwd b cb dhbacuye acsvu vya<br>
+            Go to your users page and communicate with your vapor friends.
+            Grow with your community and build a bond with your vapor buddies.<br>
             Go to my Users...<button class="Usersbtn">Users</button>
         </p>
     </div>
+    <h2>Images/Examples</h2>
+    <ul id="vapors">
+        <li><a href="http://www.healthy-e-cigs.com/photo/pl1731833-1100_mah_usb_ce4_e_cig_starter_kit_huge_vapor_ego_ce4_clearomizer.jpg">
+            <span class="img"><img src="images/vapor1.jpg" width="100px;" height="100px;"/></span>
+            </a>
+        </li>
+        <li><a href="http://www.yeskey.com/uploadfile/l1/lily0401/product/ego-series-e-cigarettes/Vapor-eGo-T-with-ce4-Starter-Kit-ego-case-pack-1365648816-0.jpg">
+            <span class="img"><img src="images/vapor2.jpg" width="100px;" height="100px;"/></span>
+        </a>
+        </li>
+        <li><a href="http://i.ebayimg.com/00/s/MTExOFgxNTM4/z/P8oAAOSwDk5TxYhk/$_35.JPG">
+            <span class="img"><img src="images/vapor3.JPG" width="100px;" height="100px;"/></span>
+        </a>
+        </li>
+
+    </ul>
 </div>
 
 
@@ -71,6 +85,7 @@
 <!----------------------------------------------------JAVASCRIPT------------------------------------------------------->
 <!-- jquery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="jquery.ui/js/jquery.colorbox-min.js"></script>
 <!-- plugins -->
 
 
